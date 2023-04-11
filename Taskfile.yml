@@ -1,0 +1,8 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - docker buildx build . -t flyfccea/go-rod:v0.112.8 --platform linux/amd64,linux/arm64 --push
